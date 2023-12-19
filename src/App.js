@@ -3,9 +3,20 @@
 // import { useEffect, useState } from 'react';
 // import { Outlet, useNavigate } from 'react-router-dom';
 
-function App(){
+import { useEffect } from "react"
+import { useState } from "react"
 
+function App(){
+  const [movieInfo, setMovieInfo] = useState([])
+
+  useEffect(() => {
+    fetch("http://localhost:4000/movies")
+    .then(r => r.json())
+    .then(data => setMovieInfo(data))
+    .catch(error => console.error(error))
+  }, [])
 }
+
 export default App
 
 // function App(){
