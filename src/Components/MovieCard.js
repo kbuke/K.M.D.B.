@@ -2,8 +2,14 @@
 // import DeleteButton from "./DeleteButton";
 // import Favourites from "./Favourites";
 
-function MovieCard(){
-
+function MovieCard({movie}){
+    return(
+        <article className="movieCard">
+            <h2>{movie.Title}</h2>
+            <img className="moviePoster" src={movie.Poster}/>
+            <br/>
+        </article>
+    )
 }
 export default MovieCard
 

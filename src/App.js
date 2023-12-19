@@ -27,17 +27,13 @@ function App(){
     setIsLoggedIn(true)
   }
 
-  const logOut = () => {
-    setIsLoggedIn(false)
-  }
-
   useEffect(() => {
     if(isLoggedIn) navigate("/")
     else if(!isLoggedIn) navigate("/login")
   }, [isLoggedIn])
 
   return(
-    <div className="App">
+    <article className="App">
       <header>
         <h1 className="appHeader">K.M.D.B.</h1>
         <p>Welcome to K.M.D.B., the new go-to film website.</p>
@@ -49,11 +45,12 @@ function App(){
           {
             isLoggedIn: isLoggedIn,
             logIn: logIn,
-            logOut: logOut
+
+            movieInfo: movieInfo
           }
         }/>
       </body>
-    </div>
+    </article>
   )
 }
 

@@ -8,9 +8,7 @@ function Login(){
     //retreive appData
     const appData = useOutletContext()
         //deconstruct appData obj
-        const isLoggedIn = appData.isLoggedIn
         const logIn = appData.logIn
-        const logOut = appData.logOut
 
     //Set state for username and password
     const[formData, setFormData] = useState(
