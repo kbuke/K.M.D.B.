@@ -17,14 +17,14 @@ function MovieProfile(){
         <aside className="movieInfo">
             <img src={specificMovie.Poster} />
             <div className="profileInfo">
-                <h3>{specificMovie.Title}</h3>
-                <h4>{specificMovie.Plot}</h4>
-                <p>Release Year: {specificMovie.Year}</p>
-                <p>Length of Film: {specificMovie.Runtime}</p>
-                <p>Director: {specificMovie.Director}</p>
-                <p>Actors: {specificMovie.Actors}</p>
+                <h3 className="filmTitle">{specificMovie.Title}</h3>
+                <h4 className="filmBio">{specificMovie.Plot}</h4>
+                <p className="filmYear">Release Year: {specificMovie.Year}</p>
+                <p className="filmLength">Length of Film: {specificMovie.Runtime}</p>
+                <p className="filmDirector">Director: {specificMovie.Director}</p>
+                <p className="filmActors">Actors: {specificMovie.Actors}</p>
                 {specificMovie.Genre.map(filmGenres => (
-                    <span key={filmGenres.id}>
+                    <span key={filmGenres.id} className="filmGenre">
                         <li>{filmGenres}</li>
                     </span>
                 ))}  

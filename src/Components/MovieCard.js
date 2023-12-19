@@ -7,25 +7,33 @@ import DeleteButton from "./DeleteButton";
 function MovieCard({movie, handleFave, onDelete}){
     return(
         <article className="movieCard">
-            <h2>{movie.Title}</h2>
+            <h2 className="filmTitle">{movie.Title}</h2>
             <img className="moviePoster" src={movie.Poster}/>
             <br/>
-            <Favourites 
-                movie={movie}
-                newFave={handleFave}
-            />
+
+            <div className="faveStar">
+                <Favourites 
+                    movie={movie}
+                    newFave={handleFave}
+                />
+            </div>
             <br/>
-            <DeleteButton 
-                movie={movie}
-                onDelete={onDelete}
-            />
+
+            <div className="rmButton">
+                <DeleteButton 
+                    movie={movie}
+                    onDelete={onDelete}
+                />
+            </div>
             <br/>
-            <NavLink 
-                className="learnMore" 
-                to={`/movie/${movie.id}`}
-            >
-                {movie.Title} Profile
-            </NavLink>
+            
+            <div className="learnMore" >
+                <NavLink 
+                    to={`/movie/${movie.id}`}
+                >
+                    {movie.Title} Profile
+                </NavLink>
+            </div>
         </article>
     )
 }

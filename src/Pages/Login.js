@@ -37,8 +37,23 @@ function Login(){
         <main>
             <form onSubmit={handleLogin}>
                 <div className="logInDetails">
-                    <input type="text" name="username" value={formData.username} placeholder="Enter Username" onChange={handleChange}/>
-                    <input type="password" name="password" value={formData.password} placeholder="Enter Password" onChange={handleChange}/>
+                    <input 
+                        type="text" 
+                        name="username" 
+                        value={formData.username} 
+                        placeholder="Enter Username" 
+                        onChange={handleChange}
+                        className="userName"
+                    />
+                    <br/>
+                    <input 
+                        type="password" 
+                        name="password" 
+                        value={formData.password} 
+                        placeholder="Enter Password" 
+                        onChange={handleChange}
+                        className="passWord"
+                    />
                     <br/>
                     <button type="submit">Log In</button>
                 </div>

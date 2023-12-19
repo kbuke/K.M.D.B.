@@ -1,4 +1,4 @@
-/* body {
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,36 +10,36 @@
   background-repeat: repeat;
 }
 
-App.js
+/*App.js*/
 .appHeader {
   border-radius: 50%;
-  height: 150px; /* Set the desired height */
-  /* width: 150px; /* Set the desired width
+  height: 150px; 
+  width: 150px; 
   background: black;
   color: white;
   margin-left: 50%;
   margin-right: 50%;
-} */
+} 
 
 /*Login*/
-/* .loginDetails{
+.loginDetails{
   width: 50%;
   margin: auto;
   padding: 10px;
 }
 
-.loginDetails{
-  background-color: black;
-  margin-top: 0cm;
+.userName{
+  justify-content: center;
+  align-items: center;
 }
 
 .loginTitle{
   background-color: whitesmoke;
   margin-bottom: 0cm;
-} */ 
+} 
 
 /*MovieCard*/
-/* .wrapper{
+.wrapper{
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, 33%);
@@ -58,14 +58,35 @@ App.js
   margin-top: 2cm;
 }
 
+.filmTitle{
+  text-align: center;
+}
+
 .moviePoster{
   height: 10cm;
   width: 8cm;
   object-fit: contain;
-} */
+}
+
+.faveStar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rmButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.learnMore{
+  text-align: center;
+  color: aliceblue;
+}
 
 /*MovieProfile*/
-/* .movieInfo{
+.movieInfo{
   background-size: cover;
   color: aliceblue;
   background-color: black;
@@ -80,22 +101,59 @@ App.js
   width: 7.5cm;
 }
 
+.movieInfo .profileInfo {
+  grid-column: 2;
+}
+
+.filmTitle{
+  align-items: center;
+}
+
+.filmBio{
+  text-align: center;
+}
+
 .homeButton{
   color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5cm;
+}
+
+.filmYear{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filmLength{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filmDirector{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filmActors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filmGenre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .movieInfo .profileInfo {
   grid-column: 2;
-  }
-
-input[type=radio]{
-  display: none;
 }
-
-.star{
-  cursor: pointer;
-} */
-
 
 /*AddNewFilm*/
 /* .newFilmDetails{
