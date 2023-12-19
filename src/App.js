@@ -40,6 +40,12 @@ function App(){
     setMovieInfo(faveList)
   }
 
+  //handle remove film system
+  const handleDelete = (rmMovie) => {
+    const deletedMovie = movieInfo.filter(movie => movie.id !== rmMovie.id)
+    setMovieInfo(deletedMovie)
+  }
+
   return(
     <article className="App">
       <header>
@@ -56,7 +62,9 @@ function App(){
 
             movieInfo: movieInfo,
 
-            handleFave: handleFave
+            handleFave: handleFave,
+
+            handleDelete: handleDelete
           }
         }/>
       </body>

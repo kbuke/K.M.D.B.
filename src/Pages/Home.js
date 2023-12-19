@@ -15,6 +15,9 @@ function Home(){
         //Get favourite system
         const handleFave = appData.handleFave
 
+        //Get delete system
+        const handleDelete = appData.handleDelete
+
     const movieDetails = (
         <div className="wrapper">
             {movieInfo.map(movie => (
@@ -22,6 +25,7 @@ function Home(){
                     key={movie.id} 
                     movie={movie} 
                     handleFave={handleFave}
+                    onDelete={handleDelete}
                 />
             ))}
         </div>

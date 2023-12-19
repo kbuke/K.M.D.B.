@@ -1,5 +1,4 @@
 import { Link, useOutletContext, useParams } from "react-router-dom"
-import Popup from "reactjs-popup"
 
 function MovieProfile(){
     const appData = useOutletContext()

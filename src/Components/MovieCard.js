@@ -2,8 +2,9 @@
 // import DeleteButton from "./DeleteButton";
 import { NavLink } from "react-router-dom";
 import Favourites from "./Favourites";
+import DeleteButton from "./DeleteButton";
 
-function MovieCard({movie, handleFave}){
+function MovieCard({movie, handleFave, onDelete}){
     return(
         <article className="movieCard">
             <h2>{movie.Title}</h2>
@@ -12,6 +13,11 @@ function MovieCard({movie, handleFave}){
             <Favourites 
                 movie={movie}
                 newFave={handleFave}
+            />
+            <br/>
+            <DeleteButton 
+                movie={movie}
+                onDelete={onDelete}
             />
             <br/>
             <NavLink 
