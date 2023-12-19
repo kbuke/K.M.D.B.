@@ -1,5 +1,5 @@
 // import './App.css';
-// import NavBar from './Components/NavBar';
+import NavBar from './Components/NavBar';
 // import { useEffect, useState } from 'react';
 // import { Outlet, useNavigate } from 'react-router-dom';
 
@@ -15,6 +15,19 @@ function App(){
     .then(data => setMovieInfo(data))
     .catch(error => console.error(error))
   }, [])
+
+  return(
+    <div className="App">
+      <header>
+        <h1 className="appHeader">K.M.D.B.</h1>
+        <p>Welcome to K.M.D.B., the new go-to film website.</p>
+      </header>
+
+      <body>
+        <NavBar/>
+      </body>
+    </div>
+  )
 }
 
 export default App
