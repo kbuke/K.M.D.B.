@@ -21,7 +21,6 @@ function App(){
 
   //handle login
   const[isLoggedIn, setIsLoggedIn] = useState(false)
-  console.log(isLoggedIn)
 
   const logIn = () => {
     setIsLoggedIn(true)
@@ -31,6 +30,15 @@ function App(){
     if(isLoggedIn) navigate("/")
     else if(!isLoggedIn) navigate("/login")
   }, [isLoggedIn])
+
+  //handle favourite system
+  const handleFave = (faveMovie) => {
+    const faveList = movieInfo.map(movie => {
+      if(movie.id === faveMovie.id) return faveMovie
+      else return movie
+    })
+    setMovieInfo(faveList)
+  }
 
   return(
     <article className="App">
@@ -46,7 +54,9 @@ function App(){
             isLoggedIn: isLoggedIn,
             logIn: logIn,
 
-            movieInfo: movieInfo
+            movieInfo: movieInfo,
+
+            handleFave: handleFave
           }
         }/>
       </body>

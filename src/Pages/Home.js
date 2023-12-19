@@ -11,12 +11,18 @@ function Home(){
     //Deconstruct object appData
         //Get film data
         const movieInfo = appData.movieInfo
-        console.log(movieInfo)
+        
+        //Get favourite system
+        const handleFave = appData.handleFave
 
     const movieDetails = (
         <div className="wrapper">
             {movieInfo.map(movie => (
-                <MovieCard key={movie.id} movie={movie}/>
+                <MovieCard 
+                    key={movie.id} 
+                    movie={movie} 
+                    handleFave={handleFave}
+                />
             ))}
         </div>
     )

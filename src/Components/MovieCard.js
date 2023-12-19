@@ -1,13 +1,17 @@
 // import { NavLink } from "react-router-dom";
 // import DeleteButton from "./DeleteButton";
-// import Favourites from "./Favourites";
+import Favourites from "./Favourites";
 
-function MovieCard({movie}){
+function MovieCard({movie, handleFave}){
     return(
         <article className="movieCard">
             <h2>{movie.Title}</h2>
             <img className="moviePoster" src={movie.Poster}/>
             <br/>
+            <Favourites 
+                movie={movie}
+                newFave={handleFave}
+            />
         </article>
     )
 }
