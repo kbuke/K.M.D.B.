@@ -3,8 +3,10 @@
 // import { useState } from "react"
 // import FilterSection from "../Components/FilterSection"
 
-function Home(){
+import { useOutletContext } from "react-router-dom"
 
+function Home(){
+    const appData = useOutletContext()
 }
 export default Home
 

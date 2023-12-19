@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
-function NavBar(){
+function NavBar({isLoggedIn}){
+
     return(
         <nav>
             <NavLink
@@ -22,7 +23,7 @@ function NavBar(){
                 to="/login"
                 className="nav-link"
             >
-                Login
+                {isLoggedIn? "Logout" : "Login"}
             </NavLink>
         </nav>
     )

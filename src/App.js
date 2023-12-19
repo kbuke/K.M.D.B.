@@ -5,8 +5,11 @@ import NavBar from './Components/NavBar';
 
 import { useEffect } from "react"
 import { useState } from "react"
+import { Outlet, useNavigate } from 'react-router-dom';
 
 function App(){
+  const navigate = useNavigate()
+
   const [movieInfo, setMovieInfo] = useState([])
 
   useEffect(() => {
@@ -16,6 +19,22 @@ function App(){
     .catch(error => console.error(error))
   }, [])
 
+  //handle login
+  const[isLoggedIn, setIsLoggedIn] = useState(false)
+
+  const logIn = () => {
+    setIsLoggedIn(true)
+  }
+
+  const logOut = () => {
+    setIsLoggedIn(false)
+  }
+
+  useEffect(() => {
+    if(isLoggedIn) navigate("/")
+    else if(!isLoggedIn) navigate("/login")
+  }, [isLoggedIn])
+
   return(
     <div className="App">
       <header>
@@ -24,7 +43,14 @@ function App(){
       </header>
 
       <body>
-        <NavBar/>
+        <NavBar isLoggedIn={isLoggedIn}/>
+        <Outlet context={
+          {
+            isLoggedIn: isLoggedIn,
+            logIn: logIn,
+            logOut: logOut
+          }
+        }/>
       </body>
     </div>
   )
