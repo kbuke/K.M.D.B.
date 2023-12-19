@@ -54,6 +54,12 @@ function App(){
     setSearchBox(e.target.value)
   }
 
+  //handle year filter
+  const handleYear = () => {
+    const year = [...movieInfo].sort((a, b) => a.Year - b.Year)
+    setMovieInfo(year)
+  }
+
   return(
     <article className="App">
       <header>
@@ -75,7 +81,9 @@ function App(){
             handleDelete: handleDelete,
 
             handleSearch: handleSearch,
-            searchBox: searchBox
+            searchBox: searchBox,
+
+            handleYear: handleYear,
           }
         }/>
       </body>

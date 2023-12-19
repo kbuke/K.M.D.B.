@@ -23,6 +23,9 @@ function Home(){
             const handleSearch = appData.handleSearch
             const searchBox = appData.searchBox
 
+            //Year Filter
+            const handleYear = appData.handleYear
+
             const filteredMovies = movieInfo.filter(movie => {
                 const movieTitle = movie.Title.toLowerCase()
                 if(movieTitle.includes(searchBox.toLowerCase())) return movieTitle
@@ -46,6 +49,7 @@ function Home(){
             <FilterSection 
                 handleSearch={handleSearch}
                 searchBox={searchBox}
+                handleYear={handleYear}
             />
             {movieDetails}
         </main>

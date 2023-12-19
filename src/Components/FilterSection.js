@@ -1,12 +1,28 @@
-function FilterSection({searchBox, handleSearch}){
+function FilterSection(
+    {
+        searchBox, 
+        handleSearch,
+        handleYear
+    }
+){
     return(
-        <input
-            type="text"
-            value={searchBox}
-            onChange={handleSearch}
-            placeholder="Search for Films"
-            className="filmSearch"
-        />
+        <div>
+            <input
+                type="text"
+                value={searchBox}
+                onChange={handleSearch}
+                placeholder="Search for Films"
+                className="filmSearch"
+            />
+            <br/>
+
+            <button
+                onClick={handleYear}
+                className="filterYear"
+            >
+                Filter By Year
+            </button>
+        </div>
     )
 }
 export default FilterSection
