@@ -7,6 +7,8 @@ import { useOutletContext } from "react-router-dom"
 
 function Home(){
     const appData = useOutletContext()
+
+    //Deconstruct object appData
 }
 export default Home
 
