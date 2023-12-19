@@ -1,7 +1,7 @@
 // import { Outlet, useOutletContext } from "react-router-dom"
+import FilterSection from "../Components/FilterSection"
 import MovieCard from "../Components/MovieCard"
 // import { useState } from "react"
-// import FilterSection from "../Components/FilterSection"
 
 import { useOutletContext } from "react-router-dom"
 
@@ -18,9 +18,19 @@ function Home(){
         //Get delete system
         const handleDelete = appData.handleDelete
 
+        //Handle filter system
+            //Search Bar Filter
+            const handleSearch = appData.handleSearch
+            const searchBox = appData.searchBox
+
+            const filteredMovies = movieInfo.filter(movie => {
+                const movieTitle = movie.Title.toLowerCase()
+                if(movieTitle.includes(searchBox.toLowerCase())) return movieTitle
+            })
+
     const movieDetails = (
         <div className="wrapper">
-            {movieInfo.map(movie => (
+            {filteredMovies.map(movie => (
                 <MovieCard 
                     key={movie.id} 
                     movie={movie} 
@@ -32,7 +42,13 @@ function Home(){
     )
 
     return(
-        [movieDetails]
+        <main>
+            <FilterSection 
+                handleSearch={handleSearch}
+                searchBox={searchBox}
+            />
+            {movieDetails}
+        </main>
     )
 }
 export default Home

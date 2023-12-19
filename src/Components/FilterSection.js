@@ -1,5 +1,13 @@
-function FilterSection(){
-
+function FilterSection({searchBox, handleSearch}){
+    return(
+        <input
+            type="text"
+            value={searchBox}
+            onChange={handleSearch}
+            placeholder="Search for Films"
+            className="filmSearch"
+        />
+    )
 }
 export default FilterSection
 

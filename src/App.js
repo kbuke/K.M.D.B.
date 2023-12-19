@@ -46,6 +46,14 @@ function App(){
     setMovieInfo(deletedMovie)
   }
 
+  //handle search bar filter
+  const[searchBox, setSearchBox] = useState("")
+
+  const handleSearch = (e) => {
+    e.preventDefault()
+    setSearchBox(e.target.value)
+  }
+
   return(
     <article className="App">
       <header>
@@ -64,7 +72,10 @@ function App(){
 
             handleFave: handleFave,
 
-            handleDelete: handleDelete
+            handleDelete: handleDelete,
+
+            handleSearch: handleSearch,
+            searchBox: searchBox
           }
         }/>
       </body>
