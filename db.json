@@ -1,0 +1,451 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "Title": "Grave of the Fireflies",
+      "Year": "1988",
+      "Runtime": "89 min",
+      "Genre": [
+        "Animation",
+        "Drama",
+        "War"
+      ],
+      "Director": "Isao Takahata",
+      "Actors": "Tsutomu Tatsumi, Ayano Shiraishi, Akemi Yamaguchi",
+      "Plot": "A young boy and his little sister struggle to survive in Japan during World War II.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZmY2NjUzNDQtNTgxNC00M2Q4LTljOWQtMjNjNDBjNWUxNmJlXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+      "Rating": 0,
+      "Banner": "https://static.frieze.com/files/styles/hero_image/public/article/main/main-images-herogravefi.jpeg?itok=CEKX3f5i",
+      "Fave": false
+    },
+    {
+      "id": 2,
+      "Title": "Jaws",
+      "Year": "1975",
+      "Runtime": "124 min",
+      "Genre": [
+        "Adventure",
+        "Mystery",
+        "Thriller"
+      ],
+      "Director": "Steven Spielberg",
+      "Actors": "Roy Scheider, Robert Shaw, Richard Dreyfuss",
+      "Plot": "When a killer shark unleashes chaos on a beach community off Cape Cod, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+      "Fave": false,
+      "Banner": "https://ordinary-times.com/wp-content/uploads/2020/06/Jaws-banner.jpg"
+    },
+    {
+      "id": 3,
+      "Title": "The Departed",
+      "Year": "2006",
+      "Rated": "R",
+      "Released": "06 Oct 2006",
+      "Runtime": "151 min",
+      "Genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "Director": "Martin Scorsese",
+      "Writer": "William Monahan, Alan Mak, Felix Chong",
+      "Actors": "Leonardo DiCaprio, Matt Damon, Jack Nicholson",
+      "Plot": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+      "Language": "English, Cantonese",
+      "Country": "United States, Hong Kong",
+      "Awards": "Won 4 Oscars. 98 wins & 141 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.5/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "91%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "85/100"
+        }
+      ],
+      "Metascore": "85",
+      "imdbRating": "8.5",
+      "imdbVotes": "1,393,861",
+      "imdbID": "tt0407887",
+      "Type": "movie",
+      "DVD": "24 Oct 2008",
+      "BoxOffice": "$132,399,394",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "Fave": false,
+      "Banner": "https://ntvb.tmsimg.com/assets/p162564_v_h8_ap.jpg?w=960&h=540"
+    },
+    {
+      "id": 4,
+      "Title": "The Lord of the Rings: The Return of the King",
+      "Year": "2003",
+      "Rated": "PG-13",
+      "Released": "17 Dec 2003",
+      "Runtime": "201 min",
+      "Genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "Director": "Peter Jackson",
+      "Writer": "J.R.R. Tolkien, Fran Walsh, Philippa Boyens",
+      "Actors": "Elijah Wood, Viggo Mortensen, Ian McKellen",
+      "Plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "Language": "English, Quenya, Old English, Sindarin",
+      "Country": "New Zealand, United States",
+      "Awards": "Won 11 Oscars. 215 wins & 124 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "9.0/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "94%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "94/100"
+        }
+      ],
+      "Metascore": "94",
+      "imdbRating": "9.0",
+      "imdbVotes": "1,935,582",
+      "imdbID": "tt0167260",
+      "Type": "movie",
+      "DVD": "06 Apr 2010",
+      "BoxOffice": "$379,427,292",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "Fave": false,
+      "Banner": "https://demeliou.files.wordpress.com/2013/02/lord-of-the-rings-movie.jpg"
+    },
+    {
+      "id": 5,
+      "Title": "Paths of Glory",
+      "Year": "1957",
+      "Rated": "Approved",
+      "Released": "25 Dec 1957",
+      "Runtime": "88 min",
+      "Genre": [
+        "Drama",
+        "War"
+      ],
+      "Director": "Stanley Kubrick",
+      "Writer": "Stanley Kubrick, Calder Willingham, Jim Thompson",
+      "Actors": "Kirk Douglas, Ralph Meeker, Adolphe Menjou",
+      "Plot": "After refusing to attack an enemy position, a general accuses the soldiers of cowardice and their commanding officer must defend them.",
+      "Language": "English, German, Latin",
+      "Country": "United States",
+      "Awards": "Nominated for 1 BAFTA Award5 wins & 3 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOTI5Nzc0OTMtYzBkMS00NjkxLThmM2UtNjM2ODgxN2M5NjNkXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.4/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "96%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "90/100"
+        }
+      ],
+      "Metascore": "90",
+      "imdbRating": "8.4",
+      "imdbVotes": "208,113",
+      "imdbID": "tt0050825",
+      "Type": "movie",
+      "DVD": "16 Sep 2008",
+      "BoxOffice": "N/A",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "Fave": false,
+      "Banner": "https://www.lab111.nl/wp-content/uploads/2019/10/Paths-Of-Glory-Banner-1-1024x576.jpg"
+    },
+    {
+      "id": 6,
+      "Title": "Million Dollar Baby",
+      "Year": "2004",
+      "Rated": "PG-13",
+      "Released": "28 Jan 2005",
+      "Runtime": "132 min",
+      "Genre": [
+        "Drama",
+        "Sport"
+      ],
+      "Director": "Clint Eastwood",
+      "Writer": "Paul Haggis, F.X. Toole",
+      "Actors": "Hilary Swank, Clint Eastwood, Morgan Freeman",
+      "Plot": "Frankie, an ill-tempered old coach, reluctantly agrees to train aspiring boxer Maggie. Impressed with her determination and talent, he helps her become the best and the two soon form a close bond.",
+      "Language": "English, Irish Gaelic",
+      "Country": "United States",
+      "Awards": "Won 4 Oscars. 68 wins & 86 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTkxNzA1NDQxOV5BMl5BanBnXkFtZTcwNTkyMTIzMw@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.1/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "90%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "86/100"
+        }
+      ],
+      "Metascore": "86",
+      "imdbRating": "8.1",
+      "imdbVotes": "711,922",
+      "imdbID": "tt0405159",
+      "Type": "movie",
+      "DVD": "14 Jan 2016",
+      "BoxOffice": "$100,492,203",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "Fave": false,
+      "Banner": "https://irs.www.warnerbros.com/hero-banner-v2-tablet-jpeg/movies/media/browser/million_dollar_baby_banner.jpg"
+    },
+    {
+      "id": 7,
+      "Title": "Almost Famous",
+      "Year": "2000",
+      "Rated": "R",
+      "Released": "22 Sep 2000",
+      "Runtime": "122 min",
+      "Genre": [
+        "Adventure",
+        "Comedy",
+        "Drama"
+      ],
+      "Director": "Cameron Crowe",
+      "Writer": "Cameron Crowe",
+      "Actors": "Billy Crudup, Patrick Fugit, Kate Hudson",
+      "Plot": "A high-school boy in the early 1970s is given the chance to write a story for Rolling Stone magazine about an up-and-coming rock band as he accompanies them on their concert tour.",
+      "Language": "English, French",
+      "Country": "United States",
+      "Awards": "Won 1 Oscar. 54 wins & 103 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMzY1ZjMwMGEtYTY1ZS00ZDllLTk0ZmUtYzA3ZTA4NmYwNGNkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "89%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "90/100"
+        }
+      ],
+      "Metascore": "90",
+      "imdbRating": "7.9",
+      "imdbVotes": "289,259",
+      "imdbID": "tt0181875",
+      "Type": "movie",
+      "DVD": "01 Aug 2013",
+      "BoxOffice": "$32,534,850",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "Fave": false,
+      "Banner": "https://www.ericdsnider.com/wp-content/uploads/2018/02/homepage-almost-famous-movie-poster.jpg"
+    },
+    {
+      "id": 8,
+      "Title": "Barbie",
+      "Year": "2023",
+      "Rated": "PG-13",
+      "Released": "21 Jul 2023",
+      "Runtime": "114 min",
+      "Genre": [
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "Director": "Greta Gerwig",
+      "Writer": "Greta Gerwig, Noah Baumbach",
+      "Actors": "Margot Robbie, Ryan Gosling, Issa Rae",
+      "Plot": "Barbie suffers a crisis that leads her to question her world and her existence.",
+      "Language": "English, Spanish",
+      "Country": "United States, United Kingdom",
+      "Awards": "5 wins & 9 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNjU3N2QxNzYtMjk1NC00MTc4LTk1NTQtMmUxNTljM2I0NDA5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.0/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "88%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "80/100"
+        }
+      ],
+      "Metascore": "80",
+      "imdbRating": "7.0",
+      "imdbVotes": "383,660",
+      "imdbID": "tt1517268",
+      "Type": "movie",
+      "DVD": "12 Sep 2023",
+      "BoxOffice": "$636,140,954",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "Fave": false,
+      "Banner": "https://deadline.com/wp-content/uploads/2023/04/Barbie.jpg?w=681&h=383&crop=1"
+    },
+    {
+      "id": 9,
+      "Title": "Oppenheimer",
+      "Year": "2023",
+      "Rated": "R",
+      "Released": "21 Jul 2023",
+      "Runtime": "180 min",
+      "Genre": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "Director": "Christopher Nolan",
+      "Writer": "Christopher Nolan, Kai Bird, Martin Sherwin",
+      "Actors": "Cillian Murphy, Emily Blunt, Matt Damon",
+      "Plot": "The story of American scientist, J. Robert Oppenheimer, and his role in the development of the atomic bomb.",
+      "Language": "English, German, Italian",
+      "Country": "United States, United Kingdom",
+      "Awards": "7 wins & 3 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.5/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "93%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "88/100"
+        }
+      ],
+      "Metascore": "88",
+      "imdbRating": "8.5",
+      "imdbVotes": "529,711",
+      "imdbID": "tt15398776",
+      "Type": "movie",
+      "DVD": "21 Nov 2023",
+      "BoxOffice": "$325,390,875",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "Fave": false,
+      "Banner": "https://images.hindustantimes.com/img/2022/07/22/550x309/Oppenheimer-Movie-Poster_1658466334143_1658466388193_1658466388193.jpg"
+    },
+    {
+      "id": 10,
+      "Title": "Godzilla Minus One",
+      "Year": "2023",
+      "Rated": "PG-13",
+      "Released": "01 Dec 2023",
+      "Runtime": "125 min",
+      "Genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "Director": "Takashi Yamazaki",
+      "Writer": "Takashi Yamazaki",
+      "Actors": "Minami Hamabe, Sakura Ando, Ryunosuke Kamiki",
+      "Plot": "Post war Japan is at its lowest point when a new crisis emerges in the form of a giant monster, baptized in the horrific power of the atomic bomb.",
+      "Language": "Japanese",
+      "Country": "Japan",
+      "Awards": "N/A",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYTZkNWQyMDEtMmRhNi00Nzc5LWFhNjQtMWRiOTllYmEzOWE5XkEyXkFqcGdeQXVyMTMwNzYxMTUx._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.4/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "8.4",
+      "imdbVotes": "1,637",
+      "imdbID": "tt23289160",
+      "Type": "movie",
+      "DVD": "N/A",
+      "BoxOffice": "N/A",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "Fave": false,
+      "Banner": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d17c8c7e-fe92-40fb-a04e-6dac09ec2cc9/dg8xjnp-9e75e975-2327-4f08-8d2a-d9e557eb0330.jpg/v1/fit/w_828,h_482,q_70,strp/new_promotional_artwork_of_godzilla_minus_one__by_ian2024_dg8xjnp-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzM5IiwicGF0aCI6IlwvZlwvZDE3YzhjN2UtZmU5Mi00MGZiLWEwNGUtNmRhYzA5ZWMyY2M5XC9kZzh4am5wLTllNzVlOTc1LTIzMjctNGYwOC04ZDJhLWQ5ZTU1N2ViMDMzMC5qcGciLCJ3aWR0aCI6Ijw9MTI3MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.iM_DL-EhzYfzENPBQA2-CXzx9jxvvAlGyA_CBboI-KU"
+    },
+    {
+      "id": 11,
+      "Title": "The Matrix",
+      "Year": "1999",
+      "Rated": "R",
+      "Released": "31 Mar 1999",
+      "Runtime": "136 min",
+      "Genre": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "Director": "Lana Wachowski, Lilly Wachowski",
+      "Writer": "Lilly Wachowski, Lana Wachowski",
+      "Actors": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+      "Plot": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+      "Language": "English",
+      "Country": "United States, Australia",
+      "Awards": "Won 4 Oscars. 42 wins & 52 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.7/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "83%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "73/100"
+        }
+      ],
+      "Metascore": "73",
+      "imdbRating": "8.7",
+      "imdbVotes": "2,007,561",
+      "imdbID": "tt0133093",
+      "Type": "movie",
+      "DVD": "01 Jan 2009",
+      "BoxOffice": "$172,076,928",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "Fave": false,
+      "Banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuObsCynBzBVwJ18jV-EIY7j7mvQwa_ihd0AjRzS5J3g&s"
+    }
+  ]
+}

@@ -1,13 +1,157 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://cdn1.vectorstock.com/i/1000x1000/78/50/cinema-pattern-seamless-background-with-symbols-vector-22367850.jpg");
+  background-size: contain;
+  background-repeat: repeat;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+App.js
+.appHeader {
+  border-radius: 50%;
+  height: 150px; /* Set the desired height */
+  /* width: 150px; /* Set the desired width
+  background: black;
+  color: white;
+  margin-left: 50%;
+  margin-right: 50%;
+} */
+
+/*Login*/
+/* .loginDetails{
+  width: 50%;
+  margin: auto;
+  padding: 10px;
 }
+
+.loginDetails{
+  background-color: black;
+  margin-top: 0cm;
+}
+
+.loginTitle{
+  background-color: whitesmoke;
+  margin-bottom: 0cm;
+} */ 
+
+/*MovieCard*/
+/* .wrapper{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 33%);
+  grid-auto-rows: auto;
+}
+
+.movieCard {
+  width: 8cm;
+  padding: 50px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+  border-top: 3cm;
+  border-bottom: 3cm;
+  align-items: center;
+  margin-top: 2cm;
+}
+
+.moviePoster{
+  height: 10cm;
+  width: 8cm;
+  object-fit: contain;
+} */
+
+/*MovieProfile*/
+/* .movieInfo{
+  background-size: cover;
+  color: aliceblue;
+  background-color: black;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 1.5cm;
+}
+
+.movieInfo img {
+  grid-column: 1;
+  height: 10cm;
+  width: 7.5cm;
+}
+
+.homeButton{
+  color: greenyellow;
+}
+
+.movieInfo .profileInfo {
+  grid-column: 2;
+  }
+
+input[type=radio]{
+  display: none;
+}
+
+.star{
+  cursor: pointer;
+} */
+
+
+/*AddNewFilm*/
+/* .newFilmDetails{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 23%);
+  grid-auto-rows: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  border-top: 0cm;
+}
+
+.addButton{
+  width:10cm;
+  margin-left: 0%;
+  margin-bottom: 1.5cm;
+}
+
+.newFilmTitle{
+  background-color: aliceblue;
+  border-bottom: 0cm;
+  border-top: 0cm;
+}
+
+.inputBox{
+  width: 7cm;
+} */
+
+/*Home*/
+/* .filterMenu{
+  margin-top: 0.75cm;
+  border-style: groove;
+  margin-left: 0.5cm;
+  width: 7cm;
+  background-color: tomato;
+}
+
+.filmSearch{
+  width: 5.2cm;
+}
+
+.genreFilter{
+  width: 5.2cm;
+} */
+
+/* .filterYear{
+  width: 5.2cm;
+} */
+
+/* .faveFilter{
+  width: 5.2cm;
+} */
+
+/* ErrorPage
+.errorMessage{
+  color: white;
+}  */
+
