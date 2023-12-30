@@ -2,7 +2,9 @@ function FilterSection(
     {
         searchBox, 
         handleSearch,
-        handleYear
+        handleYear,
+        handleGenre,
+        eachGenre
     }
 ){
     return(
@@ -22,6 +24,15 @@ function FilterSection(
             >
                 Filter By Year
             </button>
+            <br/>
+
+            <select onChange={handleGenre}>
+                <option>Select Genre</option>
+                {[...new Set(eachGenre.flat())].map(genre => ( //TAKE NOTE OF THESE METHODS, SET AND FLAT()
+                    <option key={genre}>{genre}</option>
+                ))}
+            </select>
+
         </div>
     )
 }

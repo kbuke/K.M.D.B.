@@ -1,4 +1,5 @@
 // import { Outlet, useOutletContext } from "react-router-dom"
+import { useState } from "react"
 import FilterSection from "../Components/FilterSection"
 import MovieCard from "../Components/MovieCard"
 // import { useState } from "react"
@@ -31,9 +32,39 @@ function Home(){
                 if(movieTitle.includes(searchBox.toLowerCase())) return movieTitle
             })
 
+            //Genre Filter
+            const genre = appData.genre
+            const handleGenre = appData.handleGenre
+
+            const genreFilter = filteredMovies.filter(movie => {
+                const movieGenre = movie.Genre
+                const filterGenres = movieGenre.filter(genres => {
+                    if(genres === genre) return genre
+                })
+                if(genre === "Select Genre") {
+                    return true
+                } else if (genre === filterGenres[0]){
+                    return filterGenres[0]
+                } else {
+                    return null
+                }
+            })
+
+            const eachGenre = movieInfo.map(movie => {
+                const genreArray = movie.Genre
+                return genreArray
+            })
+
+            // movieInfo.map(movie => {
+            //     const genreArray = movie.Genre
+            //     genreArray.map(eachGenre => {
+            //         console.log(eachGenre)
+            //     })
+            // })
+
     const movieDetails = (
         <div className="wrapper">
-            {filteredMovies.map(movie => (
+            {genreFilter.map(movie => (
                 <MovieCard 
                     key={movie.id} 
                     movie={movie} 
@@ -50,6 +81,8 @@ function Home(){
                 handleSearch={handleSearch}
                 searchBox={searchBox}
                 handleYear={handleYear}
+                handleGenre = {handleGenre}
+                eachGenre = {eachGenre}
             />
             {movieDetails}
         </main>

@@ -60,6 +60,14 @@ function App(){
     setMovieInfo(year)
   }
 
+  //handle genre filter
+  const [genre, setGenre] = useState("Select Genre")
+
+  const handleGenre = (e) => {
+    e.preventDefault()
+    setGenre(e.target.value)
+  }
+
   return(
     <article className="App">
       <header>
@@ -84,6 +92,9 @@ function App(){
             searchBox: searchBox,
 
             handleYear: handleYear,
+
+            genre: genre,
+            handleGenre: handleGenre
           }
         }/>
       </body>
