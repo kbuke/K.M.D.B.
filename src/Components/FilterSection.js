@@ -4,11 +4,13 @@ function FilterSection(
         handleSearch,
         handleYear,
         handleGenre,
-        eachGenre
+        eachGenre,
+        faveButtonFilter,
+        faveButton
     }
 ){
     return(
-        <div>
+        <div className="filterMenu">
             <input
                 type="text"
                 value={searchBox}
@@ -32,6 +34,11 @@ function FilterSection(
                     <option key={genre}>{genre}</option>
                 ))}
             </select>
+            <br/>
+
+            <button onClick={faveButtonFilter}>
+                {faveButton? "Show All Films" : "Show Favourite Films"}
+            </button>
 
         </div>
     )

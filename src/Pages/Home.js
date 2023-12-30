@@ -55,23 +55,28 @@ function Home(){
                 return genreArray
             })
 
-            // movieInfo.map(movie => {
-            //     const genreArray = movie.Genre
-            //     genreArray.map(eachGenre => {
-            //         console.log(eachGenre)
-            //     })
-            // })
+            //Fave Film Filter
+            const[faveButton, setFaveButton] = useState(false)
+
+            const faveButtonFilter = () => {
+                setFaveButton(!faveButton)
+            }
+
+            const faveFilter = genreFilter.filter(movie => {
+                const movieFave = movie.Fave
+                if(movieFave === true) return movieFave
+            })
 
     const movieDetails = (
         <div className="wrapper">
-            {genreFilter.map(movie => (
-                <MovieCard 
-                    key={movie.id} 
-                    movie={movie} 
-                    handleFave={handleFave}
-                    onDelete={handleDelete}
-                />
-            ))}
+            {faveButton? 
+                faveFilter.map(movie => (
+                    <MovieCard key={movie.id} movie={movie} onDelete={handleDelete} movieInfo={movieInfo} handleFave={handleFave} /> 
+                )) 
+                : 
+                genreFilter.map(movie => (
+                    <MovieCard key={movie.id} movie={movie} onDelete={handleDelete} movieInfo={movieInfo} handleFave={handleFave} />
+                ))}
         </div>
     )
 
@@ -83,6 +88,8 @@ function Home(){
                 handleYear={handleYear}
                 handleGenre = {handleGenre}
                 eachGenre = {eachGenre}
+                faveButtonFilter = {faveButtonFilter}
+                faveButton = {faveButton}
             />
             {movieDetails}
         </main>
