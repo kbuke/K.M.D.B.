@@ -446,6 +446,21 @@
       "Response": "True",
       "Fave": false,
       "Banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuObsCynBzBVwJ18jV-EIY7j7mvQwa_ihd0AjRzS5J3g&s"
+    },
+    {
+      "Title": "Up",
+      "Year": "2023",
+      "Runtime": "90 minutes",
+      "Genre": [
+        "Comedy",
+        " Animation "
+      ],
+      "Director": "Disney",
+      "Actors": "bill",
+      "Plot": "The house flies",
+      "Poster": "https://target.scene7.com/is/image/Target/GUEST_b87658c1-a265-40b5-93a1-93602764b55a?wid=1200&hei=1200&qlt=80&fmt=webp",
+      "Fave": "",
+      "id": 12
     }
   ]
 }

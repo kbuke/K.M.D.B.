@@ -62,7 +62,7 @@ function AddNewFilm(){
 
                 <label className="genreBox">
                     Genre: 
-                    <input type="text" name="genre" value={genre} onChange={e => setGenre([e.target.value])}/>
+                    <input type="text" name="genre" value={genre} onChange={e => setGenre(e.target.value.split(","))}/> 
                 </label>
 
                 <label className="directorBox">
