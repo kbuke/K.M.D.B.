@@ -13,7 +13,7 @@ function AddNewFilm(){
     const [actors, setActors] = useState("")
     const [plot, setPlot] = useState("")
     const [poster, setPoster] = useState("")
-    const [fave, setFave] = useState("")
+    const [fave, setFave] = useState(true)
 
 
     function handleSubmit(e) {
@@ -27,7 +27,8 @@ function AddNewFilm(){
           Actors: actors,
           Plot: plot,
           Poster: poster,
-          Fave: fave
+        //   Fave: fave === null ? "N/A" : fave.toString()
+        Fave: fave
         };
         fetch("http://localhost:4000/movies", {
           method: "POST",
@@ -40,6 +41,7 @@ function AddNewFilm(){
           .then((data) => {handleNewFilm(data);})
           .catch((error) => console.error(error));
       }
+      console.log(fave)
 
     return(
         <form className="newFilm" onSubmit={(e) => handleSubmit(e)}>
@@ -62,7 +64,7 @@ function AddNewFilm(){
 
                 <label className="genreBox">
                     Genre: 
-                    <input type="text" name="genre" value={genre} onChange={e => setGenre(e.target.value.split(","))}/> 
+                    <input type="text" name="genre" value={genre} onChange={e => setGenre(e.target.value.split(",")) === true? true : false}/> 
                 </label>
 
                 <label className="directorBox">
@@ -86,9 +88,11 @@ function AddNewFilm(){
 
                 <label>
                     Favourite Film?: 
-                    <select className="faveBox" onChange={e => setFave(e.target.value)}>
-                        <option>true</option>
-                        <option>false</option>
+                    <select className="faveBox" onChange={e => {
+                        console.log(e.target.value)
+                        setFave(JSON.parse(e.target.value))}}>
+                        <option value={true}>True</option>
+                        <option value={false}>False</option>
                     </select>
                 </label>
                 <br/>
