@@ -1,8 +1,4 @@
-// import './App.css';
 import NavBar from './Components/NavBar';
-// import { useEffect, useState } from 'react';
-// import { Outlet, useNavigate } from 'react-router-dom';
-
 import { useEffect } from "react"
 import { useState } from "react"
 import { Outlet, useNavigate } from 'react-router-dom';
@@ -68,11 +64,16 @@ function App(){
     setGenre(e.target.value)
   }
 
+  //handle new films
+  const handleNewMovie = (newMovie) => {
+    setMovieInfo([...movieInfo, newMovie])
+  }
+
   return(
     <article className="App">
       <header>
         <h1 className="appHeader">K.M.D.B.</h1>
-        <p>Welcome to K.M.D.B., the new go-to film website.</p>
+        <p className='intro'>Welcome to K.M.D.B., the new go-to film website. Here you can see facts about your favourite movies such as the directors, and actors. You can also create a favourite list by adding a star to each film.</p>
       </header>
 
       <body>
@@ -94,7 +95,9 @@ function App(){
             handleYear: handleYear,
 
             genre: genre,
-            handleGenre: handleGenre
+            handleGenre: handleGenre,
+
+            handleNewMovie: handleNewMovie
           }
         }/>
       </body>
@@ -103,112 +106,3 @@ function App(){
 }
 
 export default App
-
-// function App(){
-//   const[movieInfo, setMovieInfo] = useState([])
-
-//   useEffect(() => {
-//     fetch("http://localhost:4000/movies")
-//     .then(r => r.json())
-//     .then(data => setMovieInfo(data))
-//     .catch(error => console.error(error))
-//   }, [])
-
-//   //Set up log in 
-//   const[isLoggedIn, setIsLoggedIn] = useState(false)
-//   const navigate = useNavigate()
-
-//   const logIn = () => {
-//     setIsLoggedIn(true)
-//   }
-
-//   const logOut = () => {
-//     setIsLoggedIn(false)
-//   }
-
-//   useEffect(() => {
-//     if(isLoggedIn){
-//       navigate("/")
-//     } else {
-//       navigate("/login")
-//     }
-//   }, [isLoggedIn])
-
-//   //Handle Liking System
-//   const handleFave = (faveMovie) => {
-//     const faveList = movieInfo.map((movie) => {
-//       if(movie.id === faveMovie.id){
-//         return faveMovie
-//       } else {
-//         return movie
-//       }
-//     })
-//     setMovieInfo(faveList)
-//   }
-
-//   //Set up filters
-//   const[searchBox, setSearchBox] = useState("")
-
-//   const handleSearch = (e) => {
-//     e.preventDefault()
-//     setSearchBox(e.target.value)
-//   }
-
-//   //Set up Genre Filter
-//   const [genre, setGenre] = useState("Select Genre")
-
-//   const handleGenre = (e) => {
-//     e.preventDefault()
-//     setGenre(e.target.value)
-//   }
-
-//   //Filter by Year
-//   const handleYear = () => {
-//     const year = [...movieInfo].sort((a, b) => a.Year - b.Year)
-//     setMovieInfo(year)
-//   }
-
-//   //Set up New Film List
-//   const handleNewMovie = (newMovie) => {
-//     setMovieInfo([...movieInfo, newMovie])
-//   }
-
-//   //Set up Deleted Films
-//   const handleDelete = (rmMovie) => {
-//     const deletedMovie = movieInfo.filter(movie => movie.id !== rmMovie.id)
-//     setMovieInfo(deletedMovie)
-//   }
-
-
-//   return (
-//     <div className='App'>
-//       <header>
-//         <h1 className='appHeader'>K.M.D.B.</h1>
-//         <NavBar isLoggedIn={isLoggedIn} logOut={logOut} logIn={logIn}/>
-//         <Outlet context={
-//           {
-//             isLoggedIn: isLoggedIn,
-//             logIn: logIn,
-//             logOut: logOut,
-
-//             movieInfo: movieInfo,
-//             handleSearch: handleSearch,
-//             searchBox: searchBox,
-
-//             genre: genre,
-//             handleGenre: handleGenre,
-
-//             handleNewMovie: handleNewMovie,
-
-//             handleDelete: handleDelete,
-
-//             handleYear: handleYear,
-
-//             handleFave: handleFave
-//           }
-//         }/>
-//       </header>
-//     </div>
-//   )
-// }
-// export default App;

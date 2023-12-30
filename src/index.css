@@ -1,14 +1,18 @@
-body {
-  background-image: url("https://cdn1.vectorstock.com/i/1000x1000/78/50/cinema-pattern-seamless-background-with-symbols-vector-22367850.jpg");
-  background-size: contain;
-  background-repeat: repeat;
+.App{
+    background-image: url("https://cdn1.vectorstock.com/i/1000x1000/78/50/cinema-pattern-seamless-background-with-symbols-vector-22367850.jpg");
+    background-size: contain;
+    background-repeat: repeat;
 }
 
 /*App.js*/
+.intro{
+  background-color: aliceblue;
+}
+
 .appHeader {
-  border-radius: 50%;
+  /* border-radius: 50%;
   height: 150px; 
-  width: 150px; 
+  width: 150px;  */
   background: black;
   color: white;
   margin-left: 50%;
@@ -149,33 +153,111 @@ body {
   grid-column: 2;
 }
 
+/*FilterSection*/
+.filterMenu{
+  display: grid;
+}
+
+.filmSearch{
+  grid-column: 1;
+  width: 5cm;
+  background-color: violet;
+}
+
+.filterYear{
+  grid-column: 2;
+  width: 3cm;
+  background-color: violet;
+}
+
+.filterGenre{
+  grid-column: 3;
+  width: 3cm;
+  background-color: violet;
+}
+
+.filterFave{
+  grid-column: 4;
+  width: 5cm;
+  background-color: violet;
+}
+
 /*AddNewFilm*/
-/* .newFilmDetails{
+.newFilmTitle{
+  background-color: aliceblue;
+}
+
+.newFilmDetails{
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, 23%);
   grid-auto-rows: auto;
   justify-content: center;
   align-items: center;
-  background-color: blue;
+  background-color: orange;
   border-top: 0cm;
+}
+
+.titleBox{
+  grid-row: 1;
+  grid-column: 1;
+  width: 5cm
+}
+
+.yearBox{
+  grid-row: 1;
+  grid-column: 2;
+  width: 5cm;
+}
+
+.timeBox{
+  grid-row: 1;
+  grid-column: 3;
+  width: 5cm;
+}
+
+.genreBox{
+  grid-row: 2;
+  grid-column: 1;
+  width: 5cm;
+}
+
+.directorBox{
+  grid-row: 2;
+  grid-column: 2;
+  width: 5cm
+}
+
+.actorBox{
+  grid-row: 2;
+  grid-column: 3;
+  width: 5cm;
+}
+
+.plotBox{
+  grid-row: 3;
+  grid-column: 1;
+  width: 5cm;
+}
+
+.posterBox{
+  grid-row: 3;
+  grid-column: 2;
+  width: 5cm;
+}
+
+.faveBox{
+  grid-row: 3;
+  grid-column: 3;
+  width: 5cm;
 }
 
 .addButton{
-  width:10cm;
-  margin-left: 0%;
-  margin-bottom: 1.5cm;
+  width: 5cm;
+  color: aliceblue;
+  background-color: blueviolet;
 }
 
-.newFilmTitle{
-  background-color: aliceblue;
-  border-bottom: 0cm;
-  border-top: 0cm;
-}
-
-.inputBox{
-  width: 7cm;
-} */
 
 /*Home*/
 /* .filterMenu{
