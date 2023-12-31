@@ -1,5 +1,6 @@
 import { useOutletContext } from "react-router-dom"
 import { useState } from "react"
+import "./AddNewFilm.css"
 
 function AddNewFilm(){
     const appData = useOutletContext()
