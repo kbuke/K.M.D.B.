@@ -1,0 +1,27 @@
+.filterMenu{
+    display: grid;
+  }
+  
+  .filmSearch{
+    grid-column: 1;
+    width: 5cm;
+    background-color: violet;
+  }
+  
+  .filterYear{
+    grid-column: 2;
+    width: 4cm;
+    background-color: violet;
+  }
+  
+  .filterGenre{
+    grid-column: 3;
+    width: 3cm;
+    background-color: violet;
+  }
+  
+  .filterFave{
+    grid-column: 4;
+    width: 5cm;
+    background-color: violet;
+  }

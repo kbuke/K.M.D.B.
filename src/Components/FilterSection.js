@@ -1,3 +1,5 @@
+import "./FilterSection.css"
+
 function FilterSection(
     {
         searchBox, 

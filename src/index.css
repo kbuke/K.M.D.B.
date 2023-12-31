@@ -106,7 +106,7 @@
 }
 
 /*FilterSection*/
-.filterMenu{
+/* .filterMenu{
   display: grid;
 }
 
@@ -132,7 +132,7 @@
   grid-column: 4;
   width: 5cm;
   background-color: violet;
-}
+} */
 
 /*AddNewFilm*/
 .newFilmTitle{
