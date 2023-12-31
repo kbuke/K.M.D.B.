@@ -2,6 +2,8 @@
     background-image: url("https://cdn1.vectorstock.com/i/1000x1000/78/50/cinema-pattern-seamless-background-with-symbols-vector-22367850.jpg");
     background-size: contain;
     background-repeat: repeat;
+    min-height: 100vh;
+    min-width: 100vh;
 }
 
 /*App.js*/
