@@ -24,6 +24,19 @@
   color: white;
 }
 
+.intro{
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.appHeader {
+  width: 8cm;
+  height: 3cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
 /* .App-link {
   color: #61dafb;
 }

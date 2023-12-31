@@ -2,6 +2,7 @@ import NavBar from './Components/NavBar';
 import { useEffect } from "react"
 import { useState } from "react"
 import { Outlet, useNavigate } from 'react-router-dom';
+import "./App.css"
 
 function App(){
   const navigate = useNavigate()
