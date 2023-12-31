@@ -1,0 +1,47 @@
+.wrapper{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 33%);
+    grid-auto-rows: auto;
+  }
+  
+  .movieCard {
+    width: 8cm;
+    padding: 50px;
+    margin-right: 20px;
+    background-color: black;
+    color: white;
+    border-top: 3cm;
+    border-bottom: 3cm;
+    align-items: center;
+    margin-top: 2cm;
+  }
+  
+  .filmTitle{
+    text-align: center;
+  }
+  
+  .moviePoster{
+    height: 10cm;
+    width: 8cm;
+    object-fit: contain;
+  }
+  
+  .faveStar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rmButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .learnMore{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

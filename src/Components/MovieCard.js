@@ -3,6 +3,7 @@
 import { NavLink } from "react-router-dom";
 import Favourites from "./Favourites";
 import DeleteButton from "./DeleteButton";
+import "./MovieCard.css"
 
 function MovieCard({movie, handleFave, onDelete}){
     return(
