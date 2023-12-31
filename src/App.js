@@ -83,7 +83,7 @@ function App(){
         <p className='intro'>Welcome to K.M.D.B., the new go-to film website. Here you can see facts about your favourite movies such as the directors, and actors. You can also create a favourite list by adding a star to each film.</p>
       </header>
 
-      <body>
+      <div>
         <NavBar isLoggedIn={isLoggedIn}/>
         <Outlet context={
           {
@@ -108,7 +108,7 @@ function App(){
             handleNewMovie: handleNewMovie
           }
         }/>
-      </body>
+      </div>
     </article>
   )
 }

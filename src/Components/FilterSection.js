@@ -14,6 +14,7 @@ function FilterSection(
 ){
     return(
         <div className="filterMenu">
+            <h3>Filter Films</h3>
             <input
                 type="text"
                 value={searchBox}

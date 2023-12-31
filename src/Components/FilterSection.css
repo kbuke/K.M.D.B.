@@ -1,5 +1,9 @@
 .filterMenu{
     display: grid;
+    border-style: double;
+    background-color: aqua;
+    padding-top: 0.25cm;
+    padding-bottom: 0.5cm;
   }
   
   .filmSearch{
