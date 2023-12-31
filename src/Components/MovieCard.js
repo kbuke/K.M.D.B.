@@ -27,9 +27,10 @@ function MovieCard({movie, handleFave, onDelete}){
             </div>
             <br/>
             
-            <div className="learnMore" >
+            <div >
                 <NavLink 
                     to={`/movie/${movie.id}`}
+                    className="learnMore"
                 >
                     {movie.Title} Profile
                 </NavLink>

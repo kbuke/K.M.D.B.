@@ -78,8 +78,10 @@
 }
 
 .learnMore{
-  text-align: center;
   color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*MovieProfile*/

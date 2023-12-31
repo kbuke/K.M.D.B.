@@ -446,6 +446,20 @@
       "Response": "True",
       "Fave": false,
       "Banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuObsCynBzBVwJ18jV-EIY7j7mvQwa_ihd0AjRzS5J3g&s"
+    },
+    {
+      "Title": "Nightmare on Elm Street ",
+      "Year": "1984",
+      "Runtime": "90 minutes",
+      "Genre": [
+        "Horror"
+      ],
+      "Director": "Freddie",
+      "Actors": "Freddie Kruger",
+      "Plot": "Guy kills teenagers in dreams",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzFjZmM1ODgtMDBkMS00NWFlLTg2YmUtZjc3ZTgxMjE1OTI2L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg",
+      "Fave": false,
+      "id": 14
     }
   ]
 }
