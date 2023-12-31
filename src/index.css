@@ -6,22 +6,9 @@
     min-width: 100vh;
 }
 
-/*App.js*/
-/* .intro{
-  background-color: aliceblue;
-  text-align: center;
-}
-
-.appHeader {
-  width: 8cm;
-  height: 3cm;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}  */
 
 /*Login*/
-.loginDetails{
+/* .loginDetails{
   width: 50%;
   margin: auto;
   padding: 10px;
@@ -35,7 +22,7 @@
 .loginTitle{
   background-color: whitesmoke;
   margin-bottom: 0cm;
-} 
+}  */
 
 /*MovieProfile*/
 .movieInfo{
