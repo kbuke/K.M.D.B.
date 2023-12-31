@@ -7,25 +7,9 @@
 }
 
 
-/*Login*/
-/* .loginDetails{
-  width: 50%;
-  margin: auto;
-  padding: 10px;
-}
-
-.userName{
-  justify-content: center;
-  align-items: center;
-}
-
-.loginTitle{
-  background-color: whitesmoke;
-  margin-bottom: 0cm;
-}  */
 
 /*MovieProfile*/
-.movieInfo{
+/* .movieInfo{
   background-size: cover;
   color: aliceblue;
   background-color: black;
@@ -92,7 +76,7 @@
 
 .movieInfo .profileInfo {
   grid-column: 2;
-}
+} */
 
 /*AddNewFilm*/
 .newFilmTitle{

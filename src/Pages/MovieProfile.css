@@ -1,0 +1,68 @@
+.movieInfo{
+    background-size: cover;
+    color: aliceblue;
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-top: 1.5cm;
+  }
+  
+  .movieInfo img {
+    grid-column: 1;
+    height: 10cm;
+    width: 7.5cm;
+  }
+  
+  .movieInfo .profileInfo {
+    grid-column: 2;
+  }
+  
+  .filmTitle{
+    align-items: center;
+  }
+  
+  .filmBio{
+    text-align: center;
+  }
+  
+  .homeButton{
+    color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5cm;
+  }
+  
+  .filmYear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .filmLength{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .filmDirector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .filmActors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .filmGenre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .movieInfo .profileInfo {
+    grid-column: 2;
+  }
