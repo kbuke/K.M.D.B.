@@ -51,9 +51,15 @@ function App(){
   }
 
   //handle year filter
+  const [year, setYear] = useState(true)
+
   const handleYear = () => {
-    const year = [...movieInfo].sort((a, b) => a.Year - b.Year)
-    setMovieInfo(year)
+    setYear(!year)
+
+    const oldToNew = [...movieInfo].sort((a,b) => a.Year - b.Year)
+    const newToOld = [...movieInfo].sort((a,b) => b.Year - a.Year)
+
+    year? setMovieInfo(oldToNew) : setMovieInfo(newToOld)
   }
 
   //handle genre filter
@@ -72,7 +78,8 @@ function App(){
   return(
     <article className="App">
       <header>
-        <h1 className="appHeader">K.M.D.B.</h1>
+        {/* <h1 className="appHeader">K.M.D.B.</h1> */}
+        <img className='appHeader' src='https://fontmeme.com/permalink/231231/b7c56f05192b56d3e59fb59419777620.png'/>
         <p className='intro'>Welcome to K.M.D.B., the new go-to film website. Here you can see facts about your favourite movies such as the directors, and actors. You can also create a favourite list by adding a star to each film.</p>
       </header>
 
@@ -93,6 +100,7 @@ function App(){
             searchBox: searchBox,
 
             handleYear: handleYear,
+            year: year,
 
             genre: genre,
             handleGenre: handleGenre,

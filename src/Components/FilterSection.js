@@ -3,6 +3,7 @@ function FilterSection(
         searchBox, 
         handleSearch,
         handleYear,
+        year,
         handleGenre,
         eachGenre,
         faveButtonFilter,
@@ -23,7 +24,8 @@ function FilterSection(
                 onClick={handleYear}
                 className="filterYear"
             >
-                Filter By Year
+                {/* Filter By Year */}
+                {year? "Oldest -> Newest" : "Newest -> Oldest"}
             </button>
         
 

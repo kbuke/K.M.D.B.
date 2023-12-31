@@ -27,13 +27,14 @@ function Home(){
             const handleSearch = appData.handleSearch
             const searchBox = appData.searchBox
 
-            //Year Filter
-            const handleYear = appData.handleYear
-
             const filteredMovies = movieInfo.filter(movie => {
                 const movieTitle = movie.Title.toLowerCase()
                 if(movieTitle.includes(searchBox.toLowerCase())) return movieTitle
             })
+
+            //Year Filter
+            const handleYear = appData.handleYear
+            const year = appData.year
 
             //Genre Filter
             const genre = appData.genre
@@ -57,6 +58,7 @@ function Home(){
                 const genreArray = movie.Genre
                 return genreArray
             })
+            
 
             //Fave Film Filter
             const[faveButton, setFaveButton] = useState(false)
@@ -89,6 +91,7 @@ function Home(){
                 handleSearch={handleSearch}
                 searchBox={searchBox}
                 handleYear={handleYear}
+                year={year}
                 handleGenre = {handleGenre}
                 eachGenre = {eachGenre}
                 faveButtonFilter = {faveButtonFilter}

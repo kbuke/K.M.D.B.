@@ -9,8 +9,15 @@
     text-align: center;
     font-size: min(10vw, 15px) ;
     color: white;
+    align-items: center;
+    justify-content: center;
 }
   
 .active {
     color: red;
+}
+
+.navBarContainer{
+    display: flex;
+    justify-content: center;
 }

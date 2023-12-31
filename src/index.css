@@ -7,16 +7,15 @@
 /*App.js*/
 .intro{
   background-color: aliceblue;
+  text-align: center;
 }
 
 .appHeader {
-  /* border-radius: 50%;
-  height: 150px; 
-  width: 150px;  */
-  background: black;
-  color: white;
-  margin-left: 50%;
-  margin-right: 50%;
+  width: 8cm;
+  height: 3cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 } 
 
 /*Login*/
@@ -166,7 +165,7 @@
 
 .filterYear{
   grid-column: 2;
-  width: 3cm;
+  width: 4cm;
   background-color: violet;
 }
 
