@@ -6,6 +6,15 @@
     min-width: 100vh;
 }
 
+.titleContainer{
+  width: 100%;
+  background-color: black;
+}
+
+.filmTitle{
+  color: aliceblue;
+}
+
 
 
 

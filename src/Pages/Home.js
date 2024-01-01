@@ -101,9 +101,13 @@ function Home(){
                 {
                     handleNewMovie: handleNewMovie
                 }
-            }
-            
+            } 
             />
+            <div className="titleContainer">
+                <h2 className="filmTitle">
+                    {faveButton? "Favourite Films" : "All Films"}
+                </h2>
+            </div>
             {movieDetails}
         </main>
     )
