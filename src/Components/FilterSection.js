@@ -1,3 +1,4 @@
+import { useOutlet, useOutletContext } from "react-router-dom"
 import "./FilterSection.css"
 
 function FilterSection(

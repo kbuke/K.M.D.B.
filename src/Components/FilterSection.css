@@ -2,14 +2,13 @@
     display: grid;
     border-style: double;
     background-color: aqua;
-    padding-top: 0.25cm;
-    padding-bottom: 0.5cm;
   }
   
   .filmSearch{
     grid-column: 1;
     width: 5cm;
     background-color: violet;
+    margin-left: 2cm;
   }
   
   .filterYear{

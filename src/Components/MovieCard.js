@@ -1,6 +1,4 @@
-// import { NavLink } from "react-router-dom";
-// import DeleteButton from "./DeleteButton";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Favourites from "./Favourites";
 import DeleteButton from "./DeleteButton";
 import "./MovieCard.css"
@@ -29,12 +27,12 @@ function MovieCard({movie, handleFave, onDelete}){
             <br/>
             
             <div >
-                <NavLink 
+                <Link 
                     to={`/movie/${movie.id}`}
                     className="learnMore"
                 >
                     {movie.Title} Profile
-                </NavLink>
+                </Link>
             </div>
         </article>
     )

@@ -1,44 +1,71 @@
-// import { Outlet, useOutletContext } from "react-router-dom"
+
 import { useState } from "react"
 import FilterSection from "../Components/FilterSection"
 import MovieCard from "../Components/MovieCard"
-// import { useState } from "react"
-
 import { Outlet, useOutletContext } from "react-router-dom"
 
 function Home(){
     const appData = useOutletContext()
+
+    const setMovieInfo = appData.setMovieInfo
 
     //Deconstruct object appData
         //Get film data
         const movieInfo = appData.movieInfo
         
         //Get favourite system
-        const handleFave = appData.handleFave
+        const handleFave = (faveMovie) => {
+            const faveList = movieInfo.map(movie => {
+              if(movie.id === faveMovie.id) return faveMovie
+              else return movie
+            })
+            setMovieInfo(faveList)
+        }
 
         //Get delete system
-        const handleDelete = appData.handleDelete
+        const handleDelete = (rmMovie) => {
+            const deletedMovie = movieInfo.filter(movie => movie.id !== rmMovie.id)
+            setMovieInfo(deletedMovie)
+        }
 
         //Get handle add movies system
-        const handleNewMovie = appData.handleNewMovie
+        const handleNewMovie = (newMovie) => {
+            setMovieInfo([...movieInfo, newMovie])
+          }
 
         //Handle filter system
-            //Search Bar Filter
-            const handleSearch = appData.handleSearch
-            const searchBox = appData.searchBox
+            //Year Filter
+            const [year, setYear] = useState(true)
 
+            const handleYear = () => {
+              setYear(!year)
+          
+              const oldToNew = [...movieInfo].sort((a,b) => a.Year - b.Year)
+              const newToOld = [...movieInfo].sort((a,b) => b.Year - a.Year)
+          
+              year? setMovieInfo(oldToNew) : setMovieInfo(newToOld)
+            }
+
+            //Search Bar Filter
+            const[searchBox, setSearchBox] = useState("")
+
+            const handleSearch = (e) => {
+                e.preventDefault()
+                setSearchBox(e.target.value)
+            }
+        
             const filteredMovies = movieInfo.filter(movie => {
                 const movieTitle = movie.Title.toLowerCase()
                 if(movieTitle.includes(searchBox.toLowerCase())) return movieTitle
             })
 
-            //Year Filter
-            const handleYear = appData.handleYear
-            const year = appData.year
-
             //Genre Filter
-            const genre = appData.genre
-            const handleGenre = appData.handleGenre
+            const [genre, setGenre] = useState("Select Genre")
+
+            const handleGenre = (e) => {
+              e.preventDefault()
+              setGenre(e.target.value)
+            }
 
             const genreFilter = filteredMovies.filter(movie => {
                 const movieGenre = movie.Genre
@@ -59,7 +86,6 @@ function Home(){
                 return genreArray
             })
             
-
             //Fave Film Filter
             const[faveButton, setFaveButton] = useState(false)
 

@@ -28,8 +28,7 @@ function AddNewFilm(){
           Actors: actors,
           Plot: plot,
           Poster: poster,
-        //   Fave: fave === null ? "N/A" : fave.toString()
-        Fave: fave
+          Fave: fave
         };
         fetch("http://localhost:4000/movies", {
           method: "POST",

@@ -10,21 +10,23 @@ function NavBar({isLoggedIn}){
                     to="/"
                     className="nav-link"
                 >
-                    Home
+                   <em>Home</em>
                 </NavLink>
 
                 <NavLink
                     to="/addnewfilm"
                     className="nav-link"
                 >
-                    Add New Film
+                    <em>Add New Film</em>
                 </NavLink>
 
                 <NavLink
                     to="/login"
                     className="nav-link"
                 >
-                    {isLoggedIn? "Logout" : "Login"}
+                    <em>
+                        {isLoggedIn? "Logout" : "Login"}
+                    </em>
                 </NavLink>
             </nav>
         </div>

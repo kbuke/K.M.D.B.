@@ -32,7 +32,7 @@
       "Actors": "Roy Scheider, Robert Shaw, Richard Dreyfuss",
       "Plot": "When a killer shark unleashes chaos on a beach community off Cape Cod, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.",
       "Poster": "https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
-      "Fave": false,
+      "Fave": true,
       "Banner": "https://ordinary-times.com/wp-content/uploads/2020/06/Jaws-banner.jpg"
     },
     {
@@ -172,7 +172,7 @@
       "Production": "N/A",
       "Website": "N/A",
       "Response": "True",
-      "Fave": true,
+      "Fave": false,
       "Banner": "https://www.lab111.nl/wp-content/uploads/2019/10/Paths-Of-Glory-Banner-1-1024x576.jpg"
     },
     {
@@ -398,68 +398,8 @@
       "Production": "N/A",
       "Website": "N/A",
       "Response": "True",
-      "Fave": false,
+      "Fave": true,
       "Banner": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d17c8c7e-fe92-40fb-a04e-6dac09ec2cc9/dg8xjnp-9e75e975-2327-4f08-8d2a-d9e557eb0330.jpg/v1/fit/w_828,h_482,q_70,strp/new_promotional_artwork_of_godzilla_minus_one__by_ian2024_dg8xjnp-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzM5IiwicGF0aCI6IlwvZlwvZDE3YzhjN2UtZmU5Mi00MGZiLWEwNGUtNmRhYzA5ZWMyY2M5XC9kZzh4am5wLTllNzVlOTc1LTIzMjctNGYwOC04ZDJhLWQ5ZTU1N2ViMDMzMC5qcGciLCJ3aWR0aCI6Ijw9MTI3MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.iM_DL-EhzYfzENPBQA2-CXzx9jxvvAlGyA_CBboI-KU"
-    },
-    {
-      "id": 11,
-      "Title": "The Matrix",
-      "Year": "1999",
-      "Rated": "R",
-      "Released": "31 Mar 1999",
-      "Runtime": "136 min",
-      "Genre": [
-        "Action",
-        "Sci-Fi"
-      ],
-      "Director": "Lana Wachowski, Lilly Wachowski",
-      "Writer": "Lilly Wachowski, Lana Wachowski",
-      "Actors": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
-      "Plot": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
-      "Language": "English",
-      "Country": "United States, Australia",
-      "Awards": "Won 4 Oscars. 42 wins & 52 nominations total",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "Ratings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "8.7/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "83%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "73/100"
-        }
-      ],
-      "Metascore": "73",
-      "imdbRating": "8.7",
-      "imdbVotes": "2,007,561",
-      "imdbID": "tt0133093",
-      "Type": "movie",
-      "DVD": "01 Jan 2009",
-      "BoxOffice": "$172,076,928",
-      "Production": "N/A",
-      "Website": "N/A",
-      "Response": "True",
-      "Fave": false,
-      "Banner": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuObsCynBzBVwJ18jV-EIY7j7mvQwa_ihd0AjRzS5J3g&s"
-    },
-    {
-      "Title": "Nightmare on Elm Street ",
-      "Year": "1984",
-      "Runtime": "90 minutes",
-      "Genre": [
-        "Horror"
-      ],
-      "Director": "Freddie",
-      "Actors": "Freddie Kruger",
-      "Plot": "Guy kills teenagers in dreams",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNzFjZmM1ODgtMDBkMS00NWFlLTg2YmUtZjc3ZTgxMjE1OTI2L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg",
-      "Fave": false,
-      "id": 14
     }
   ]
 }

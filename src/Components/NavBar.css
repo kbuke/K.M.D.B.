@@ -4,11 +4,10 @@
     width: 6cm;
     padding: 5px;
     margin: 0 6px 6px;
-    background: blue;
     text-decoration: none;
     text-align: center;
     font-size: min(10vw, 15px) ;
-    color: white;
+    color: black;
     align-items: center;
     justify-content: center;
 }
@@ -20,4 +19,7 @@
 .navBarContainer{
     display: flex;
     justify-content: center;
+    width: 100vw;
+    background-color: aliceblue;
+    margin-bottom: 0.5cm;
 }
