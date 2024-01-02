@@ -15,7 +15,6 @@ function App(){
     .then(data => setMovieInfo(data))
     .catch(error => console.error(error))
   }, [])
-  console.log(movieInfo)
 
   //handle login
   const[isLoggedIn, setIsLoggedIn] = useState(false)

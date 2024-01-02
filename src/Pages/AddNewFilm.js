@@ -41,7 +41,6 @@ function AddNewFilm(){
           .then((data) => {handleNewFilm(data);})
           .catch((error) => console.error(error));
       }
-      console.log(fave)
 
     return(
         <form className="newFilm" onSubmit={(e) => handleSubmit(e)}>
