@@ -96,7 +96,9 @@ function AddNewFilm(){
                 </label>
                 <br/>
 
-                <button className="addButton">Add to List</button>
+                <button className="addButton">
+                    Add To List
+                </button>
             </div>
         </form>
     )

@@ -3,11 +3,11 @@ import Favourites from "./Favourites";
 import DeleteButton from "./DeleteButton";
 import "./MovieCard.css"
 
-function MovieCard({movie, /*onDelete,*/ movieInfo, setMovieInfo}){
+function MovieCard({movie, movieInfo, setMovieInfo}){
     return(
         <article className="movieCard">
             <h2 className="filmTitle">{movie.Title}</h2>
-            <img className="moviePoster" src={movie.Poster}/>
+            <img className="moviePoster" src={movie.Poster} alt="movie posters"/>
             <br/>
 
             <div className="faveStar">
@@ -22,7 +22,6 @@ function MovieCard({movie, /*onDelete,*/ movieInfo, setMovieInfo}){
             <div className="rmButton">
                 <DeleteButton 
                     movie={movie}
-                    /*onDelete={onDelete}*/
                     movieInfo={movieInfo}
                     setMovieInfo={setMovieInfo}
                 />
