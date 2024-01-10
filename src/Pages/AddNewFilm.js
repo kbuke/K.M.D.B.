@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router-dom"
+import { Link, useOutletContext } from "react-router-dom"
 import { useState } from "react"
 import "./AddNewFilm.css"
 
@@ -43,8 +43,15 @@ function AddNewFilm(){
       }
 
     return(
-        <form className="newFilm" onSubmit={(e) => handleSubmit(e)}>
-            <h2 className="newFilmTitle">Add New Films</h2>
+        <form className="newFilm" id="newFilmForm" onSubmit={(e) => handleSubmit(e)}>
+            <div className="newFilmBanner">
+                <h2 className="newFilmTitle">Add New Films</h2>
+                <button className="exitButton">
+                    <Link to="/">
+                        <em color="white">X</em>
+                    </Link>
+                </button>
+            </div>
             <div className="newFilmDetails">
                 <label className="titleBox">
                     Title:

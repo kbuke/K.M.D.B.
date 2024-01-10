@@ -1,4 +1,4 @@
-function DeleteButton({movie, /*onDelete*/ movieInfo, setMovieInfo}){
+function DeleteButton({movie, movieInfo, setMovieInfo}){
 
     const onDelete = (rmMovie) => {
         const deletedMovie = movieInfo.filter(movie => movie.id !== rmMovie.id)
