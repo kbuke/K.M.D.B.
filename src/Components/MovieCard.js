@@ -3,7 +3,7 @@ import Favourites from "./Favourites";
 import DeleteButton from "./DeleteButton";
 import "./MovieCard.css"
 
-function MovieCard({movie, handleFave, onDelete}){
+function MovieCard({movie, /*onDelete,*/ movieInfo, setMovieInfo}){
     return(
         <article className="movieCard">
             <h2 className="filmTitle">{movie.Title}</h2>
@@ -13,7 +13,8 @@ function MovieCard({movie, handleFave, onDelete}){
             <div className="faveStar">
                 <Favourites 
                     movie={movie}
-                    newFave={handleFave}
+                    movieInfo={movieInfo}
+                    setMovieInfo={setMovieInfo}
                 />
             </div>
             <br/>
@@ -21,7 +22,9 @@ function MovieCard({movie, handleFave, onDelete}){
             <div className="rmButton">
                 <DeleteButton 
                     movie={movie}
-                    onDelete={onDelete}
+                    /*onDelete={onDelete}*/
+                    movieInfo={movieInfo}
+                    setMovieInfo={setMovieInfo}
                 />
             </div>
             <br/>

@@ -12,21 +12,6 @@ function Home(){
     //Deconstruct object appData
         //Get film data
         const movieInfo = appData.movieInfo
-        
-        //Get favourite system
-        const handleFave = (faveMovie) => {
-            const faveList = movieInfo.map(movie => {
-              if(movie.id === faveMovie.id) return faveMovie
-              else return movie
-            })
-            setMovieInfo(faveList)
-        }
-
-        //Get delete system
-        const handleDelete = (rmMovie) => {
-            const deletedMovie = movieInfo.filter(movie => movie.id !== rmMovie.id)
-            setMovieInfo(deletedMovie)
-        }
 
         //Get handle add movies system
         const handleNewMovie = (newMovie) => {
@@ -102,11 +87,11 @@ function Home(){
         <div className="wrapper">
             {faveButton? 
                 faveFilter.map(movie => (
-                    <MovieCard key={movie.id} movie={movie} onDelete={handleDelete} movieInfo={movieInfo} handleFave={handleFave} /> 
+                    <MovieCard key={movie.id} movie={movie} movieInfo={movieInfo} setMovieInfo={setMovieInfo} /> 
                 )) 
                 : 
                 genreFilter.map(movie => (
-                    <MovieCard key={movie.id} movie={movie} onDelete={handleDelete} movieInfo={movieInfo} handleFave={handleFave} />
+                    <MovieCard key={movie.id} movie={movie} movieInfo={movieInfo} setMovieInfo={setMovieInfo} />
                 ))}
         </div>
     )
@@ -116,10 +101,13 @@ function Home(){
             <FilterSection 
                 handleSearch={handleSearch}
                 searchBox={searchBox}
+
                 handleYear={handleYear}
                 year={year}
+
                 handleGenre = {handleGenre}
                 eachGenre = {eachGenre}
+                
                 faveButtonFilter = {faveButtonFilter}
                 faveButton = {faveButton}
             />

@@ -1,4 +1,9 @@
-function DeleteButton({movie, onDelete}){
+function DeleteButton({movie, /*onDelete*/ movieInfo, setMovieInfo}){
+
+    const onDelete = (rmMovie) => {
+        const deletedMovie = movieInfo.filter(movie => movie.id !== rmMovie.id)
+        setMovieInfo(deletedMovie)
+    }
 
     const handleDelete = () => {
         fetch(`http://localhost:4000/movies/${movie.id}`, {
