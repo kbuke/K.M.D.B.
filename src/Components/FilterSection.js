@@ -1,4 +1,4 @@
-import { useOutlet, useOutletContext } from "react-router-dom"
+
 import "./FilterSection.css"
 
 function FilterSection(
@@ -38,7 +38,7 @@ function FilterSection(
                 className="filterGenre"
             >
                 <option>Select Genre</option>
-                {[...new Set(eachGenre.flat())].map(genre => ( //TAKE NOTE OF THESE METHODS, SET AND FLAT()
+                {[...new Set(eachGenre.flat())].map(genre => ( 
                     <option key={genre}>{genre}</option>
                 ))}
             </select>
